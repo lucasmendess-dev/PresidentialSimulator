@@ -17,6 +17,11 @@ public partial class MainWindow : Window
         ShowDashboard();
     }
 
+    private void WorldMapButton_Click(object sender, RoutedEventArgs e)
+    {
+        ShowWorldMap();
+    }
+
     private void WorldRankingButton_Click(object sender, RoutedEventArgs e)
     {
         ShowWorldRanking();
@@ -30,6 +35,16 @@ public partial class MainWindow : Window
 
         PageSubtitleText.Text =
             "Brasília • República Federativa do Brasil";
+    }
+
+    private void ShowWorldMap()
+    {
+        MainContent.Content = new WorldMapView();
+
+        PageTitleText.Text = "MAPA MUNDIAL";
+
+        PageSubtitleText.Text =
+            "Situação geopolítica global";
     }
 
     private void ShowWorldRanking()
