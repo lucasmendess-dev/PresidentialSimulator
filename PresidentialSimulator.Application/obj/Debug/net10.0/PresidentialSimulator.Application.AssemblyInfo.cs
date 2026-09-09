@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PresidentialSimulator.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4e1fdeee4e3342f00e2dc8a57e6f1bef7c5db4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PresidentialSimulator.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PresidentialSimulator.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

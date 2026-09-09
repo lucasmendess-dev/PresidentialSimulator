@@ -1,12 +1,505 @@
 ﻿<Window x:Class="PresidentialSimulator.Presentation.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PresidentialSimulator.Presentation"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Presidential Simulator"
+        Height="900"
+        Width="1600"
+        MinHeight="750"
+        MinWidth="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#090E18">
+
+    <Window.Resources>
+
+        <!-- TÍTULO DE SEÇÃO -->
+        <Style x:Key="SectionTitle"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="#768399"/>
+
+            <Setter Property="FontSize"
+                    Value="12"/>
+
+            <Setter Property="FontWeight"
+                    Value="SemiBold"/>
+
+        </Style>
+
+
+        <!-- LABEL DASHBOARD -->
+        <Style x:Key="DashboardLabel"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="#8E9AAF"/>
+
+            <Setter Property="FontSize"
+                    Value="12"/>
+
+        </Style>
+
+
+        <!-- VALORES DASHBOARD -->
+        <Style x:Key="DashboardValue"
+               TargetType="TextBlock">
+
+            <Setter Property="Foreground"
+                    Value="White"/>
+
+            <Setter Property="FontSize"
+                    Value="20"/>
+
+            <Setter Property="FontWeight"
+                    Value="Bold"/>
+
+            <Setter Property="Margin"
+                    Value="0,3,0,18"/>
+
+        </Style>
+
+
+        <!-- BOTÕES DO MENU -->
+        <Style x:Key="MenuButtonStyle"
+               TargetType="Button">
+
+            <Setter Property="Background"
+                    Value="Transparent"/>
+
+            <Setter Property="Foreground"
+                    Value="#D4DAE5"/>
+
+            <Setter Property="BorderThickness"
+                    Value="0"/>
+
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Left"/>
+
+            <Setter Property="Padding"
+                    Value="0,9"/>
+
+            <Setter Property="FontSize"
+                    Value="14"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="ButtonBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                Padding="8,7">
+
+                            <ContentPresenter
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                        Property="Background"
+                                        Value="#182438"/>
+
+                                <Setter Property="Foreground"
+                                        Value="White"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
+
+
     <Grid>
 
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="260"/>
+
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <!-- ====================================================== -->
+        <!-- SIDEBAR -->
+        <!-- ====================================================== -->
+
+        <Border Grid.Column="0"
+                Background="#0D1421">
+
+            <Grid Margin="22">
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="Auto"/>
+
+                    <RowDefinition Height="*"/>
+
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+
+                <!-- IDENTIDADE -->
+
+                <StackPanel Grid.Row="0">
+
+                    <TextBlock Text="BRASIL"
+                               Foreground="White"
+                               FontSize="29"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Text="PRESIDENTIAL SIMULATOR"
+                               Foreground="#4F8EF7"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Margin="0,4,0,30"/>
+
+                </StackPanel>
+
+
+                <!-- DASHBOARD + MENU -->
+
+                <ScrollViewer Grid.Row="1"
+                              VerticalScrollBarVisibility="Auto">
+
+                    <StackPanel>
+
+                        <TextBlock Text="DASHBOARD"
+                                   Style="{StaticResource SectionTitle}"
+                                   Margin="0,0,0,20"/>
+
+
+                        <TextBlock Text="PIB"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <TextBlock Text="US$ 7,68 tri"
+                                   Style="{StaticResource DashboardValue}"/>
+
+
+                        <TextBlock Text="Crescimento"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <TextBlock Text="+5,1%"
+                                   Style="{StaticResource DashboardValue}"/>
+
+
+                        <TextBlock Text="Inflação"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <TextBlock Text="2,2%"
+                                   Style="{StaticResource DashboardValue}"/>
+
+
+                        <TextBlock Text="Desemprego"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <TextBlock Text="1,4%"
+                                   Style="{StaticResource DashboardValue}"/>
+
+
+                        <TextBlock Text="Aprovação"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <TextBlock Text="99%"
+                                   Style="{StaticResource DashboardValue}"/>
+
+
+                        <TextBlock Text="Estabilidade"
+                                   Style="{StaticResource DashboardLabel}"/>
+
+                        <ProgressBar Height="8"
+                                     Maximum="100"
+                                     Value="99"
+                                     Margin="0,8,0,18"/>
+
+
+                        <!-- RANKING RESUMIDO -->
+
+                        <Border Background="#121C2B"
+                                CornerRadius="8"
+                                Padding="14"
+                                Margin="0,5,0,25">
+
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="*"/>
+
+                                    <ColumnDefinition Width="Auto"/>
+
+                                </Grid.ColumnDefinitions>
+
+
+                                <StackPanel>
+
+                                    <TextBlock Text="POTÊNCIA MUNDIAL"
+                                               Foreground="#718096"
+                                               FontSize="10"
+                                               FontWeight="SemiBold"/>
+
+                                    <TextBlock Text="Brasil"
+                                               Foreground="White"
+                                               FontSize="15"
+                                               FontWeight="SemiBold"
+                                               Margin="0,4,0,0"/>
+
+                                    <TextBlock Text="Tendência: ▲"
+                                               Foreground="#45D483"
+                                               FontSize="10"
+                                               Margin="0,4,0,0"/>
+
+                                </StackPanel>
+
+
+                                <StackPanel Grid.Column="1"
+                                            HorizontalAlignment="Right">
+
+                                    <TextBlock Text="#1"
+                                               Foreground="#F4C95D"
+                                               FontSize="27"
+                                               FontWeight="Bold"
+                                               HorizontalAlignment="Right"/>
+
+                                    <TextBlock Text="98,7"
+                                               Foreground="#8996A9"
+                                               FontSize="11"
+                                               HorizontalAlignment="Right"/>
+
+                                </StackPanel>
+
+                            </Grid>
+
+                        </Border>
+
+
+                        <Separator Background="#273244"
+                                   Margin="0,0,0,25"/>
+
+
+                        <!-- MENU -->
+
+                        <TextBlock Text="ÁREAS DO GOVERNO"
+                                   Style="{StaticResource SectionTitle}"
+                                   Margin="0,0,0,12"/>
+
+
+                        <Button Content="▸ Dashboard"
+                                Style="{StaticResource MenuButtonStyle}"
+                                Click="DashboardButton_Click"/>
+
+                        <Button Content="▸ Economia"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Política"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Diplomacia"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Defesa"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Inteligência"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Mapa Mundial"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                        <Button Content="▸ Ranking Mundial"
+                                Style="{StaticResource MenuButtonStyle}"
+                                Click="WorldRankingButton_Click"/>
+
+                        <Button Content="▸ História"
+                                Style="{StaticResource MenuButtonStyle}"/>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+
+                <!-- STATUS IA -->
+
+                <Border Grid.Row="2"
+                        Background="#121C2B"
+                        CornerRadius="8"
+                        Padding="12"
+                        Margin="0,20,0,0">
+
+                    <StackPanel>
+
+                        <TextBlock Text="● IA LOCAL"
+                                   Foreground="#45D483"
+                                   FontWeight="SemiBold"
+                                   FontSize="12"/>
+
+                        <TextBlock Text="Ollama"
+                                   Foreground="#8996A9"
+                                   FontSize="11"
+                                   Margin="0,4,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+        </Border>
+
+
+        <!-- ====================================================== -->
+        <!-- ÁREA PRINCIPAL -->
+        <!-- ====================================================== -->
+
+        <Grid Grid.Column="1"
+              Background="#090E18">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="80"/>
+
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="135"/>
+
+            </Grid.RowDefinitions>
+
+
+            <!-- HEADER -->
+
+            <Border Grid.Row="0"
+                    Background="#101725"
+                    BorderBrush="#1B2638"
+                    BorderThickness="0,0,0,1">
+
+                <Grid Margin="28,0">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+
+                        <ColumnDefinition Width="Auto"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackPanel VerticalAlignment="Center">
+
+                        <TextBlock x:Name="PageTitleText"
+                                   Text="PALÁCIO DO PLANALTO"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="19"/>
+
+                        <TextBlock x:Name="PageSubtitleText"
+                                   Text="Brasília • República Federativa do Brasil"
+                                   Foreground="#79869A"
+                                   FontSize="12"
+                                   Margin="0,4,0,0"/>
+
+                    </StackPanel>
+
+
+                    <StackPanel Grid.Column="1"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Right">
+
+                        <TextBlock Text="30 SET 2037"
+                                   Foreground="White"
+                                   FontSize="15"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Right"/>
+
+                        <TextBlock Text="19:20"
+                                   Foreground="#6E7C91"
+                                   FontSize="12"
+                                   HorizontalAlignment="Right"
+                                   Margin="0,3,0,0"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- ================================================== -->
+            <!-- CONTEÚDO DINÂMICO -->
+            <!-- ================================================== -->
+
+            <ContentControl x:Name="MainContent"
+                            Grid.Row="1"/>
+
+
+            <!-- ================================================== -->
+            <!-- CHAT -->
+            <!-- ================================================== -->
+
+            <Border Grid.Row="2"
+                    Background="#101725"
+                    BorderBrush="#1B2638"
+                    BorderThickness="0,1,0,0">
+
+                <Grid Margin="25,20">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+
+                        <ColumnDefinition Width="15"/>
+
+                        <ColumnDefinition Width="130"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBox Grid.Column="0"
+                             Background="#0B111D"
+                             Foreground="White"
+                             BorderBrush="#263348"
+                             BorderThickness="1"
+                             FontSize="15"
+                             Padding="15"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto"/>
+
+
+                    <Button Grid.Column="2"
+                            Content="ENVIAR"
+                            Background="#2563EB"
+                            Foreground="White"
+                            BorderThickness="0"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Cursor="Hand"/>
+
+                </Grid>
+
+            </Border>
+
+        </Grid>
+
     </Grid>
+
 </Window>

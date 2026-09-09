@@ -9,3 +9,4 @@ C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Domain\
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Domain\obj\Debug\net10.0\refint\PresidentialSimulator.Domain.dll
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Domain\obj\Debug\net10.0\PresidentialSimulator.Domain.pdb
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Domain\obj\Debug\net10.0\ref\PresidentialSimulator.Domain.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Domain\obj\Debug\net10.0\PresidentialSimulator.Domain.sourcelink.json

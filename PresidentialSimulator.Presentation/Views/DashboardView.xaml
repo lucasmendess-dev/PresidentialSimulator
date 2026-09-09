@@ -1,0 +1,213 @@
+<UserControl x:Class="PresidentialSimulator.Presentation.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#090E18">
+
+    <Grid Margin="25">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="330"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- EVENTO + IMAGEM -->
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <!-- EVENTO -->
+            <Border Grid.Column="0"
+                    Background="#151D2C"
+                    CornerRadius="12"
+                    Padding="20">
+
+                <StackPanel>
+
+                    <TextBlock Text="EVENTO ATUAL"
+                               Foreground="#768399"
+                               FontSize="12"
+                               FontWeight="SemiBold"/>
+
+                    <TextBlock Text="Argentina abre nova fase de estudos"
+                               Foreground="White"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Margin="0,10,0,20"
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="O presidente argentino solicita uma nova rodada de audiências públicas nacionais. Economistas, governadores, universidades, sindicatos e representantes da sociedade civil serão convidados para discutir o futuro da integração."
+                               Foreground="#C5CDDA"
+                               FontSize="16"
+                               LineHeight="26"
+                               TextWrapping="Wrap"/>
+
+                    <Border Background="#101725"
+                            CornerRadius="8"
+                            Padding="15"
+                            Margin="0,25,0,0">
+
+                        <StackPanel>
+
+                            <TextBlock Text="PRESIDENTE DA ARGENTINA"
+                                       Foreground="#4F8EF7"
+                                       FontWeight="SemiBold"
+                                       FontSize="11"/>
+
+                            <TextBlock Text="&quot;Queremos conhecer a proposta. Isso não significa que já decidimos aceitá-la.&quot;"
+                                       Foreground="#E5EAF2"
+                                       FontSize="15"
+                                       FontStyle="Italic"
+                                       TextWrapping="Wrap"
+                                       Margin="0,8,0,0"/>
+
+                        </StackPanel>
+
+                    </Border>
+
+                </StackPanel>
+
+            </Border>
+
+
+            <!-- IMAGEM -->
+            <Border Grid.Column="2"
+                    Background="#151D2C"
+                    CornerRadius="12"
+                    Padding="20">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="IMAGEM DO EVENTO"
+                               Foreground="#768399"
+                               FontSize="12"
+                               FontWeight="SemiBold"
+                               Margin="0,0,0,15"/>
+
+                    <Border Grid.Row="1"
+                            Background="#0B111D"
+                            CornerRadius="10">
+
+                        <StackPanel HorizontalAlignment="Center"
+                                    VerticalAlignment="Center">
+
+                            <TextBlock Text="▧"
+                                       FontSize="45"
+                                       Foreground="#39465A"
+                                       HorizontalAlignment="Center"/>
+
+                            <TextBlock Text="Imagem relacionada ao evento"
+                                       Foreground="#69778D"
+                                       FontSize="13"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,8,0,0"/>
+
+                            <TextBlock Text="Gerada ou selecionada dinamicamente"
+                                       Foreground="#465368"
+                                       FontSize="11"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,4,0,0"/>
+
+                        </StackPanel>
+
+                    </Border>
+
+                </Grid>
+
+            </Border>
+
+        </Grid>
+
+
+        <!-- MAPA -->
+        <Border Grid.Row="2"
+                Background="#151D2C"
+                CornerRadius="12"
+                Padding="20">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Grid Grid.Row="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel>
+
+                        <TextBlock Text="MAPA GEOPOLÍTICO"
+                                   Foreground="#768399"
+                                   FontSize="12"
+                                   FontWeight="SemiBold"/>
+
+                        <TextBlock Text="Situação mundial"
+                                   Foreground="White"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+                    <TextBlock Grid.Column="1"
+                               Text="🌎 MUNDO"
+                               Foreground="#78879C"
+                               FontSize="12"
+                               VerticalAlignment="Center"/>
+
+                </Grid>
+
+
+                <Border Grid.Row="1"
+                        Background="#0A111D"
+                        CornerRadius="10"
+                        Margin="0,15,0,0">
+
+                    <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+
+                        <TextBlock Text="🌎"
+                                   FontSize="70"
+                                   HorizontalAlignment="Center"/>
+
+                        <TextBlock Text="MAPA MUNDIAL INTERATIVO"
+                                   Foreground="#8C99AC"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock Text="Países • alianças • guerras • crises • relações diplomáticas"
+                                   Foreground="#536176"
+                                   FontSize="12"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>

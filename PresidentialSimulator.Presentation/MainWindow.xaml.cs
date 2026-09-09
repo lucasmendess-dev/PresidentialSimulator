@@ -1,23 +1,44 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using PresidentialSimulator.Presentation.Views;
 
 namespace PresidentialSimulator.Presentation;
 
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
 public partial class MainWindow : Window
 {
     public MainWindow()
     {
         InitializeComponent();
+
+        ShowDashboard();
+    }
+
+    private void DashboardButton_Click(object sender, RoutedEventArgs e)
+    {
+        ShowDashboard();
+    }
+
+    private void WorldRankingButton_Click(object sender, RoutedEventArgs e)
+    {
+        ShowWorldRanking();
+    }
+
+    private void ShowDashboard()
+    {
+        MainContent.Content = new DashboardView();
+
+        PageTitleText.Text = "PALÁCIO DO PLANALTO";
+
+        PageSubtitleText.Text =
+            "Brasília • República Federativa do Brasil";
+    }
+
+    private void ShowWorldRanking()
+    {
+        MainContent.Content = new WorldRankingView();
+
+        PageTitleText.Text = "RANKING DE POTÊNCIAS";
+
+        PageSubtitleText.Text =
+            "Classificação estratégica mundial";
     }
 }
