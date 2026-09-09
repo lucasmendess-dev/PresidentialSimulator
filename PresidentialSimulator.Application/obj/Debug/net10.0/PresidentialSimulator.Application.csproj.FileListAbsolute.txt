@@ -1,0 +1,11 @@
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\bin\Debug\net10.0\PresidentialSimulator.Application.deps.json
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\bin\Debug\net10.0\PresidentialSimulator.Application.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\bin\Debug\net10.0\PresidentialSimulator.Application.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.AssemblyInfoInputs.cache
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.AssemblyInfo.cs
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.csproj.CoreCompileInputs.cache
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\refint\PresidentialSimulator.Application.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\ref\PresidentialSimulator.Application.dll

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PresidentialSimulator.Application/PresidentialSimulator.Application.csproj" />
+  <Project Path="PresidentialSimulator.Domain/PresidentialSimulator.Domain.csproj" />
+  <Project Path="PresidentialSimulator.Infrastructure/PresidentialSimulator.Infrastructure.csproj" />
+  <Project Path="PresidentialSimulator.Presentation/PresidentialSimulator.Presentation.csproj" />
+</Solution>
