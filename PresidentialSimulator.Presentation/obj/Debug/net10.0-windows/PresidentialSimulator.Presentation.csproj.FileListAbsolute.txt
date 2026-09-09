@@ -24,3 +24,15 @@ C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Present
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\Views\WorldRankingView.g.cs
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\Views\WorldMapView.baml
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\Views\WorldMapView.g.cs
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Core.xml
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.WinForms.xml
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\Microsoft.Web.WebView2.Wpf.xml
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\PresidentialSimulator.Presentation.csproj.AssemblyReference.cache
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\PresidentialSimulator.Presentation_Content.g.cs
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\Presiden.3D61B5F5.Up2Date
