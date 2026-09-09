@@ -7,14 +7,47 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "PresidentialSimulator.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PresidentialSimulator.Application": "1.0.0",
+          "PresidentialSimulator.Domain": "1.0.0"
+        },
         "runtime": {
           "PresidentialSimulator.Infrastructure.dll": {}
+        }
+      },
+      "PresidentialSimulator.Application/1.0.0": {
+        "dependencies": {
+          "PresidentialSimulator.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PresidentialSimulator.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PresidentialSimulator.Domain/1.0.0": {
+        "runtime": {
+          "PresidentialSimulator.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "PresidentialSimulator.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PresidentialSimulator.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PresidentialSimulator.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

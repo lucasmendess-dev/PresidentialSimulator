@@ -10,3 +10,9 @@ C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrast
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\obj\Debug\net10.0\PresidentialSimulator.Infrastructure.pdb
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\obj\Debug\net10.0\ref\PresidentialSimulator.Infrastructure.dll
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\obj\Debug\net10.0\PresidentialSimulator.Infrastructure.sourcelink.json
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\bin\Debug\net10.0\PresidentialSimulator.Application.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\bin\Debug\net10.0\PresidentialSimulator.Domain.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\bin\Debug\net10.0\PresidentialSimulator.Domain.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\bin\Debug\net10.0\PresidentialSimulator.Application.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\obj\Debug\net10.0\PresidentialSimulator.Infrastructure.csproj.AssemblyReference.cache
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Infrastructure\obj\Debug\net10.0\Presiden.B267F8C8.Up2Date

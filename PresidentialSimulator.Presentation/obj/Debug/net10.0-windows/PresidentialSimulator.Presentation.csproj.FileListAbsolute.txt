@@ -36,3 +36,7 @@ C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Present
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\PresidentialSimulator.Presentation.csproj.AssemblyReference.cache
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\PresidentialSimulator.Presentation_Content.g.cs
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\obj\Debug\net10.0-windows\Presiden.3D61B5F5.Up2Date
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\PresidentialSimulator.Application.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\PresidentialSimulator.Domain.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\PresidentialSimulator.Application.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Presentation\bin\Debug\net10.0-windows\PresidentialSimulator.Domain.pdb

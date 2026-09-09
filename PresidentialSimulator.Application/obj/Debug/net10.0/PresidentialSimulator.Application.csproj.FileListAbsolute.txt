@@ -10,3 +10,7 @@ C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Applica
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.pdb
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\ref\PresidentialSimulator.Application.dll
 C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.sourcelink.json
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\bin\Debug\net10.0\PresidentialSimulator.Domain.dll
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\bin\Debug\net10.0\PresidentialSimulator.Domain.pdb
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\PresidentialSimulator.Application.csproj.AssemblyReference.cache
+C:\DEV\PresidentialSimulator\PresidentialSimulator\PresidentialSimulator.Application\obj\Debug\net10.0\Presiden.51B95441.Up2Date
